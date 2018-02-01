@@ -1,0 +1,28 @@
+
+.center {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  display: inline;
+  width: 25%;
+  height: 25%;
+}
+#footer {
+  width: 100%;
+  border-top: solid 5px red;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+#input-parent {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }

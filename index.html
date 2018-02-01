@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+
+    <link rel="stylesheet" type ='text/css' href="style.css">
+
+  </head>
+  <body>
+
+      <div id='app' class='center'>
+
+        <div id='headers' class='center'>
+          <h1 id='title'>Let's play a game!</h1>
+          <h3 id='subtitle'>Guess a number between 1 and 100!</h3>
+        </div>
+
+        <div id='main'class='center'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id='player-input' class='center' placeholder="Guess a number!" maxlength="3" autofocus=autofocus></input>
+            <button id='submit'>Guess!</button>
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul class='guess-list'>
+              <li class='guess'>Guess 1</li>
+              <li class='guess'>Guess 2</li>
+              <li class='guess'>Guess 3</li>
+              <li class='guess'>Guess 4</li>
+              <li class='guess'>Guess 5</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button>Reset!</button>
+            <button>Hint!</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class='center'>
+        <div>
+          <div class=''>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class=''>
+            <h4>Project by Connor Jessup</h4>
+          </div>
+
+          <div class=''>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+  </body>
+</html>
