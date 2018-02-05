@@ -6,39 +6,40 @@
     <!-- Bootstrap and CSS here-->
 
     <link rel="stylesheet" type ='text/css' href="style.css">
+    <link rel='stylesheet' type = 'text/css' href='bootstrap.css'>
 
   </head>
   <body>
 
-      <div id='app' class='center'>
+      <div id='app' class='center' class='container'>
 
-        <div id='headers' class='center'>
-          <h1 id='title'>Let's play a game!</h1>
-          <h3 id='subtitle'>Guess a number between 1 and 100!</h3>
+        <div id='headers'>
+          <h1 id='title' class='header'>Let's play a game!</h1>
+          <h3 id='subtitle' class='header'>Guess a number between 1 and 100!</h3>
         </div>
 
-        <div id='main'class='center'>
+        <div id='main'>
           <div id='input-parent'>
             <!-- Player's guess input, and submit button -->
-            <input id='player-input' class='center' placeholder="Guess a number!" maxlength="3" autofocus=autofocus></input>
-            <button id='submit'>Guess!</button>
+            <input id='player-input' class='center' placeholder="#" maxlength="3" autofocus=autofocus></input>
+            <button id='submit' class="btn btn-success">Go!</button>
           </div>
 
           <div id='guesses'>
             <!-- unordered list of guesses -->
             <ul class='guess-list'>
-              <li class='guess'>Guess 1</li>
-              <li class='guess'>Guess 2</li>
-              <li class='guess'>Guess 3</li>
-              <li class='guess'>Guess 4</li>
-              <li class='guess'>Guess 5</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
             </ul>
           </div>
 
           <div id="menu-btns">
             <!-- reset and hint buttons -->
-            <button>Reset!</button>
-            <button>Hint!</button>
+            <button id='reset' class="btn btn-default" class='button'>Reset!</button>
+            <button id='hint' class="btn btn-default" class='button'>Hint!</button>
           </div>
         </div>
       </div>
@@ -46,16 +47,16 @@
 
 
     <div id='footer' class='center'>
-        <div>
-          <div class=''>
+        <div class='row'>
+          <div class='col-sm-4'>
             <img src='fa-logo@2x.png'></img>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <h4>Project by Connor Jessup</h4>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <img src='grace_hopper_academy.png'></img>
           </div>
 

@@ -1,28 +1,96 @@
+#headers {
+    margin-top: 40px;
+    color: black;
+    
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .center {
   text-align: center;
 }
 
 ul {
+  padding: 50px 10px 30px;  
   list-style: none;
-  padding: 0;
 }
 
 img {
   display: inline;
-  width: 25%;
-  height: 25%;
+  width: 75%;
+  height: 75%;
 }
+
 #footer {
   width: 100%;
-  border-top: solid 5px red;
+  border-top: solid 5px black;
   background-color: white;
   position: fixed;
   bottom: 0;
 }
 
 #input-parent {
+    margin-top: 60px;
     width: 160px;
     margin-left: auto;
     margin-right: auto;
-  }
+    position: relative;
+}
+
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#submit {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+}
+
+#player-input {
+    height: 160px;
+    width: 160px;
+    font-size: 60px;
+    border-radius: 50%;
+}
+
+.guess {
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 20px 30px;
+    display: inline;
+    border: solid 2px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+body {
+    background-image: url(background.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -280px;
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
+}
+
+#reset {
+    margin: 10px;
+}
+
+#hint {
+    margin: 10px;
+}
+
+#app {
+    background-color: #ffffff71;
+    margin: 50px auto;
+    width: 40%;
+}
