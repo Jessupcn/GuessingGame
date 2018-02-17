@@ -25,6 +25,7 @@ img {
 }
 
 #footer {
+  padding-top: 14px;
   width: 100%;
   border-top: solid 5px black;
   background-color: white;
@@ -92,5 +93,17 @@ body {
 #app {
     background-color: #ffffff71;
     margin: 50px auto;
-    width: 40%;
+    width: 50%;
+}
+
+.loser {
+    background-color: red;
+}
+
+.winner {
+    background-color: rgb(27, 223, 27);
+}
+
+.hint {
+    background-color: yellow;
 }
