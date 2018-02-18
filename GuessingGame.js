@@ -17,6 +17,9 @@ function shuffle(arr){
 }
 
 function Game(){
+    $('#headers').removeClass('winner');
+    $('#headers').removeClass('loser');
+    $('#headers').removeClass('hint');
     this.playersGuess = null;
     this.pastGuesses = [];
     this.winningNumber = generateWinningNumber();
