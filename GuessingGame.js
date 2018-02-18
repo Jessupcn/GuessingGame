@@ -125,11 +125,10 @@ $(document).ready(function() {
             return 'even';
         }
         function hintRange(){
-            var lowEnd = game.winningNumber - 15;
-            var highEnd = game.winningNumber + 15;
-            if(lowEnd < 0){lowEnd = 0}
-            if(highEnd > 100){highEnd = 100}
-            return lowEnd.toString() + ' and ' + highEnd.toString();
+            if(game.winningNumber <= 25){return '1 and 25'}
+            if(game.winningNumber > 25 && game.winningNumber <= 50){return '25 and 50'}
+            if(game.winningNumber > 50 && game.winningNumber <= 75){return '50 and 75'}
+            if(game.winningNumber > 75){return '75 and 100'}
         }
         $('#title').text('The winning number is an ' + evenOrOdd() + ' number between ' + hintRange());
         $('#subtitle').text('');
