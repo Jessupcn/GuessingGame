@@ -57,7 +57,7 @@ Game.prototype.checkGuess = function(){
         $('#hint, #submit').prop('disabled', true);
         $('#headers').addClass('loser');
         $('#subtitle').text('Hit reset and try again!');
-        return 'You Lose.';
+        return 'You Lose. The number was ' + game.winningNumber;
     }
     if(this.difference() < 10){return 'You\'re burning up!'}
     if(this.difference() < 25){return 'You\'re lukewarm.'}
