@@ -109,9 +109,10 @@ $(document).ready(function() {
         $('#title').text("Let's play a game!");
         $('#subtitle').text('Guess a number between 1 and 100!');
         $('.guess').text('-');
-        $('#headers').removeClass('winner, loser');
-        $('#hint, #submit').prop('disabled', false);
+        $('#headers').removeClass('winner');
+        $('#headers').removeClass('loser');
         $('#headers').removeClass('hint');
+        $('#hint, #submit').prop('disabled', false);
         game = new Game();
     });
 
